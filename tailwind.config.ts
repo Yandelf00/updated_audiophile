@@ -14,6 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors : {
+      'orange' : 'rgba(216,125,74,255)',
+      'black' : 'rgba(25,25,25,255)',
+      'gray' : 'rgba(241,241,241,255)',
+      'white' : 'white'
+    },
     screens : {
       '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
