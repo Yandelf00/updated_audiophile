@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Hero() {
     const hero = '/images/home/desktop/image-hero.jpg'
     return (
-        <div className='w-full h-[500px] bg-black flex justify-center'>
+        <div className='w-full h-[500px] bg-black flex justify-center pl-2'>
             <div className='h-full w-[1000px] flex flex-row border border-l-0 border-r-0 border-b-0 border-t-gray border-l-none'
                 style={{backgroundImage : `url(${hero})`, backgroundPosition : 'top', backgroundRepeat : 'no-repeat', backgroundSize : '1000px 500px'}}>
                     <div className='w-1/2 h-full flex flex-col justify-center items-start '>
