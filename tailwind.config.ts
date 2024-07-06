@@ -16,8 +16,10 @@ const config: Config = {
     },
     colors : {
       'orange' : 'rgba(216,125,74,255)',
+      'light-orange':'#e8c1a7',
       'black' : 'rgba(25,25,25,255)',
-      'gray' : 'rgba(241,241,241,255)',
+      'gray' : 'rgb(113,111,110)',
+      'light-gray':'rgba(241,241,241,255)',
       'white' : 'white',
       'shadow' : 'rgba(0, 0, 0, 0.45)'
     },
