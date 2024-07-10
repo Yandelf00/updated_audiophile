@@ -40,7 +40,12 @@ export default function Section({params}:{params:{slug : string}}) {
           </div>
           {relevant?.map((rlv, index)=>(
             <div className='w-full' key={index}>
-                <Proto name={rlv.name} description={rlv.description} index={index} categoryImage={rlv.categoryImage}/>
+                <Proto 
+                name={rlv.name} 
+                description={rlv.description} 
+                index={index} 
+                categoryImage={rlv.categoryImage}
+                />
             </div>
           ))}
         <Sections/>
