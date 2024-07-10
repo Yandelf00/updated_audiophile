@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 type categoryImage = {
     mobile: string;
@@ -12,9 +13,11 @@ type protoProps = {
     description : string;
     index : number;
     categoryImage : categoryImage;
+    category : string
+    slug:string
 }
 
-export default function Proto({name, description, index, categoryImage}:protoProps) {
+export default function Proto({name, description, index, categoryImage, category,slug}:protoProps) {
   return (
     <>
         {index % 2 === 0 ? (
@@ -25,8 +28,10 @@ export default function Proto({name, description, index, categoryImage}:protoPro
                     space-y-7'>
                         <h1 className='text-black text-[35px] font-semibold'>{name}</h1>
                         <p className='text-gray text-[13px]'>{description}</p>
-                        <button className='bg-orange text-white w-[150px] h-[45px] 
-                        text-[13px] hover:bg-light-orange'>SEE PRODUCT</button>
+                        <Link href={`${category}/${slug}`}>
+                            <button className='bg-orange text-white w-[150px] h-[45px] 
+                            text-[13px] hover:bg-light-orange'>SEE PRODUCT</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -37,8 +42,11 @@ export default function Proto({name, description, index, categoryImage}:protoPro
                     space-y-7'>
                         <h1 className='text-black text-[35px] font-semibold'>{name}</h1>
                         <p className='text-gray text-[13px]'>{description}</p>
-                        <button className='bg-orange text-white w-[150px] h-[45px] 
-                        text-[13px] hover:bg-light-orange'>SEE PRODUCT</button>
+                        
+                        <Link href={`${category}/${slug}`}>
+                            <button className='bg-orange text-white w-[150px] h-[45px] 
+                            text-[13px] hover:bg-light-orange'>SEE PRODUCT</button>
+                        </Link>
                     </div>
                     <Image src={categoryImage.desktop} alt='alt' height={500} width={500}/>
                 </div>

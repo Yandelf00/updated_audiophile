@@ -16,6 +16,7 @@ type product= {
   name : string
   description: string
   categoryImage: categoryImage
+  slug:string
 }
 export default function Section({params}:{params:{slug : string}}) {
   const [sections, setSections]= useState<string[]>(["headphones", "speakers", "earphones"])
@@ -45,6 +46,8 @@ export default function Section({params}:{params:{slug : string}}) {
                 description={rlv.description} 
                 index={index} 
                 categoryImage={rlv.categoryImage}
+                category={params.slug}
+                slug={rlv.slug}
                 />
             </div>
           ))}
