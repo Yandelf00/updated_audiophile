@@ -14,6 +14,13 @@ export default function CartModal() {
                 overflow-x-hidden 
                 fixed outline-none 
                 inset-0 bg-shadow '>
+                    <div className='w-full flex justify-center mt-[90px]'>
+                        <div className='w-[1000px] flex justify-end'>
+                           <div className='w-[400px] h-[200px] bg-white rounded-md'>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             ):(<></>)}
         </>
