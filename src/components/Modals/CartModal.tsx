@@ -9,8 +9,11 @@ export default function CartModal() {
     return (
         <>
             {isOpen === true ? (
-                <div onClick={onClose} className='z-50 overflow-hidden fixed inset-0 bg-shadow'>
-                    
+                <div onClick={onClose} className='z-50 
+                overflow-y-hidden 
+                overflow-x-hidden 
+                fixed outline-none 
+                inset-0 bg-shadow '>
                 </div>
             ):(<></>)}
         </>
