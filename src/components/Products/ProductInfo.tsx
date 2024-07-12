@@ -1,16 +1,20 @@
 "use client"
 import React, {useState} from 'react'
 import Image from 'next/image'
+import { useItemsCart } from '@/hooks/useItemsCart'
+
 
 type productInfoProps = {
     name : string |undefined ,
     image : string |undefined,
     description: string |undefined,
-    price : number | undefined
+    price : number | undefined,
+    cartImage : string | undefined
 }
 
-export default function ProductInfo({name, image, description, price} : productInfoProps) {
+export default function ProductInfo({name, image, description, price, cartImage} : productInfoProps) {
     const [num, setNum] = useState(1)
+    const addToCart = useItemsCart((state)=>state.addItem)
 
     function addOne(){
         setNum((num)=>num+1)
@@ -20,7 +24,9 @@ export default function ProductInfo({name, image, description, price} : productI
             setNum((num)=>num-1)
         }
     }
-
+    function addCart(miniImage:string|undefined, name:string|undefined, price:number|undefined, amount:number){
+        addToCart(miniImage, name, price, amount)
+    }
     return (
         <div className='w-full flex justify-center'>
             <div className='w-[1000px] flex flex-row mt-[150px] justify-between'>
@@ -43,7 +49,8 @@ export default function ProductInfo({name, image, description, price} : productI
                                 +
                             </div> 
                         </div>
-                        <button className='w-[160px] h-[45px] bg-orange text-[13px] text-white font-bold'>ADD TO CART</button>
+                        <button onClick={()=>addCart(cartImage, name, price, num)} className='w-[160px] h-[45px] bg-orange hover:bg-light-orange
+                        transition ease-in-out duration-200 text-[13px] text-white font-bold'>ADD TO CART</button>
                     </div>
                 </div>
             </div>

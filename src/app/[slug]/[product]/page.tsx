@@ -41,6 +41,7 @@ export type productType = {
     includedItems : includedIt[]
     others : others[]
     gallery : gallery
+    cartImage : string
 }
 
 export default function Products({params}:{params:{product : string}}) {
@@ -70,6 +71,7 @@ export default function Products({params}:{params:{product : string}}) {
                             description={relevant?.description} 
                             image={relevant?.image.desktop} 
                             price={relevant?.price} 
+                            cartImage={relevant?.cartImage}
                             />                    
                             <ProductFeatures
                             features={relevant?.features}
