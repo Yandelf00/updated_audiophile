@@ -20,7 +20,7 @@ export default function CartModal() {
                 inset-0 bg-shadow '>
                     <div className='w-full flex justify-center mt-[90px]'>
                         <div className='w-[1000px] flex justify-end'>
-                           <div className='w-[400px] min-h-[250px] bg-white rounded-md'>
+                           <div onClick={(e)=>e.stopPropagation()} className='w-[400px] min-h-[250px] bg-white rounded-md'>
                                 {items.length > 0 ? (
                                     <div className='flex h-full pb-6 flex-col justify-between'>
                                         <div>
