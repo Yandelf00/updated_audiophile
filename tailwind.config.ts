@@ -36,7 +36,7 @@ const config: Config = {
       'md': {'max': '850px'},
       // => @media (max-width: 767px) { ... }
 
-      'sm': {'max': '726px'},
+      'sm': {'max': '480px'},
 
     },
   },
