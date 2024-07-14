@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function HomeZxN() {
     return (
-        <div className='w-full flex justify-center mt-[120px] '>
+        <div className='w-full flex justify-center mt-[120px] pl-5 pr-5'>
             <div className='w-[1000px] flex flex-row h-[550px] bg-orange rounded-lg bg-[url("/images/home/desktop/pattern-circles.svg")] 
             bg-left bg-no-repeat' style={{backgroundSize : '800px 800px'}}>
                 <div className='h-full w-[50%] flex  items-end justify-center'>

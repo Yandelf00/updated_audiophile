@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomeYx() {
   return (
-    <div className='mt-[50px] w-full flex justify-center'>
+    <div className='mt-[50px] w-full flex justify-center pl-5 pr-5'>
         <div className='w-[1000px]  flex flex-row justify-between'>
             <div className='w-[49%] h-[300px] rounded-lg bg-[url("/images/home/desktop/image-earphones-yx1.jpg")]'>
             </div>

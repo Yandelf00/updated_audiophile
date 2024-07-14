@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomeZxS() {
   return (
-    <div className='w-full mt-[50px] flex justify-center'>
+    <div className='w-full mt-[50px] flex justify-center pl-5 pr-5'>
         <div className='w-[1000px] h-[300px] bg-[url("/images/home/desktop/image-speaker-zx7.jpg")] rounded-lg flex-row flex'>
             <div className='w-1/2 h-full flex flex-col space-y-5 justify-center items-center'>
                 <h1 className='text-black text-[25px] font-bold'>ZX7 SPEAKER</h1> 

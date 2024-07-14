@@ -30,7 +30,7 @@ const config: Config = {
       'xl': {'max': '1279px'},
       // => @media (max-width: 1279px) { ... }
 
-      'lg': {'max': '1070px'},
+      'lg': {'max': '950px'},
       // => @media (max-width: 1023px) { ... }
 
       'md': {'max': '850px'},
