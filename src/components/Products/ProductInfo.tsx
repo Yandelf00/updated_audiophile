@@ -30,7 +30,7 @@ export default function ProductInfo({name, image, imagetab, description, price, 
     }
     return (
         <div className='w-full flex justify-center'>
-            <div className='w-[1000px] flex flex-row lg:flex-col lg:items-center  pl-5 mt-[150px] justify-between '>
+            <div className='w-[1000px] flex flex-row lg:flex-col lg:items-center sm:pl-0  pl-5 mt-[150px] justify-between '>
                 <Image src={image ? image : ''} alt='idk' height={500} width={500} className='rounded-md lg:hidden'/>
                 <Image src={image ? image : ''} alt='idk' height={400} width={400} className='rounded-md hidden lg:block'/>
                 <div className='h-full w-[41%] lg:w-[70%] lg:text-center lg:mt-5 flex flex-col justify-center space-y-10'>
