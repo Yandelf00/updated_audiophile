@@ -70,6 +70,7 @@ export default function Products({params}:{params:{product : string}}) {
                             name={relevant?.name} 
                             description={relevant?.description} 
                             image={relevant?.image.desktop} 
+                            imagetab={relevant?.image.tablet}
                             price={relevant?.price} 
                             cartImage={relevant?.cartImage}
                             />                    
