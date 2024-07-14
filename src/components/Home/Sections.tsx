@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Sections() {
   return (
@@ -8,26 +9,32 @@ export default function Sections() {
             <div className='w-[30%] sm:w-[90%] relative group h-[200px] bg-light-gray rounded-md flex flex-col items-center drop-shadow-md'>
                 <Image src={'/images/category-headphones/desktop/headphones-main.png'} alt='markeone' className='absolute top-[-80px]' height={200} width={200}/>
                 <h1 className='mt-[110px] text-[17px] text-black font-semibold'>HEADPHONES</h1>
-                <div className='flex flex-row items-center mt-3 space-x-2'>
-                    <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
-                    <Right/>
-                </div>
+                    <Link href={'/headphones'}>
+                        <div className='flex flex-row items-center mt-3 space-x-2'>
+                            <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
+                            <Right/>
+                        </div>
+                    </Link>
             </div>
             <div className='w-[30%] sm:w-[90%] relative group h-[200px] bg-light-gray rounded-md flex flex-col items-center drop-shadow-md'>
                 <Image src={'/images/category-speakers/desktop/lespeaker.png'} alt='markeone' className='absolute top-[-80px]' height={200} width={200}/>
                 <h1 className='mt-[110px] text-[17px] text-black font-semibold'>SPEAKERS</h1>
-                <div className='flex flex-row items-center mt-3 space-x-2'>
-                    <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
-                    <Right/>
-                </div>
+                    <Link href={'/speakers'}>
+                        <div className='flex flex-row items-center mt-3 space-x-2'>
+                            <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
+                            <Right/>
+                        </div>
+                    </Link>
             </div>
             <div className='w-[30%] sm:w-[90%] relative group h-[200px] bg-light-gray rounded-md flex flex-col items-center drop-shadow-md'>
                 <Image src={'/images/category-earphones/desktop/earphoones.png'} alt='markeone' className='absolute top-[-80px]' height={200} width={200}/>
                 <h1 className='mt-[110px] text-[17px] text-black font-semibold'>EARPHONES</h1>
-                <div className='flex flex-row items-center mt-3 space-x-2'>
-                    <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
-                    <Right/>
-                </div>
+                    <Link href={'/earphones'}>
+                        <div className='flex flex-row items-center mt-3 space-x-2'>
+                            <p className='cursor-pointer text-[15px] text-gray group-hover:text-orange'>SHOP</p>
+                            <Right/>
+                        </div>
+                    </Link>
             </div>
         </div>
     </div>

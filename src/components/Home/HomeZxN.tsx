@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HomeZxN() {
     return (
@@ -12,12 +13,14 @@ export default function HomeZxN() {
                 </div>
                 <div className='w-1/2 lg:w-full h-full flex flex-col items-start lg:items-center space-y-10 justify-center'>
                     <h1 className='text-white text-[40px] font-bold'>ZX9 SPEAKER</h1>
-                    <div>
+                    <div className='sm:text-center'>
                         <p className='text-white font-thin'>Upgrade to premium speakers that are</p> 
                         <p className='text-white font-thin'>phenomenally built to deliver truly remarkable</p>
                         <p className='text-white font-thin'>sound.</p>
                     </div>
-                    <button className='text-white bg-black h-[50px] w-[150px] text-[12px] hover:bg-gray'>SEE PRODUCT</button>
+                    <Link href={'/speaker/zx9-speaker'}>
+                        <button className='text-white bg-black h-[50px] w-[150px] text-[12px] hover:bg-gray'>SEE PRODUCT</button>
+                    </Link>
                 </div> 
             </div> 
         </div>
